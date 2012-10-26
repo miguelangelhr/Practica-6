@@ -5,7 +5,8 @@ describe PiedraPapelTijeras do
 	before :each do
 		@tiradas_esp = [:piedra, :papel, :tijeras]
 		@jugadas_esp = {:piedra => :tijeras, :papel => :piedra, :tijeras => :papel}
-		@ppt_obj = PiedraPapelTijeras.new(@tiradas_esp, @jugadas_esp)
+		@resultados_esp = [:gana, :pierde, :empata]
+		@ppt_obj = PiedraPapelTijeras.new(@tiradas_esp, @jugadas_esp, @resultados_esp)
 	end
 	
 	it "Debe exitir una jugada del humano" do
@@ -34,6 +35,8 @@ describe PiedraPapelTijeras do
 		@ppt_obj.obtener_maquina().should == :papel||:tijeras||:piedra
 	end
 
-
+	it "Debe existir una lista de resultados de un juego desde el punto de vista de la maquina" do
+		@ppt_obj.resultados.should == @resultados_esp
+	end
 
 end

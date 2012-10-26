@@ -1,13 +1,14 @@
 
 class PiedraPapelTijeras
 	
-	attr_reader :humano, :maquina, :tiradas, :jugadas	
+	attr_reader :humano, :maquina, :tiradas, :jugadas, :resultados	
 
-	def initialize(tiradas, jugadas) 
+	def initialize(tiradas, jugadas, resultados) 
 		@humano = :papel
 		@maquina = 1
 		@tiradas = tiradas
 		@jugadas = jugadas
+		@resultados = resultados
 	end
 	
 	def obtener_humano(cadena)
