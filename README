@@ -8,12 +8,7 @@
 
  DESCRIPCIÓN: Implementación de un programa para jugar al Piedra, Papel o Tijera Orientado a Objetos con la creación de una clase llamada PiedraPapelTijera usando Desarrollo Dirigido por el Comportamiento (BDD) usando el Rspec.
 
- Existen 3 tipos de Test:
-	test_jugar
-	test_variado
-	test_erroneo
-
  Existen 3 tipos de rake:
-	rake t[test_name] # Ejecuta el test pasado por parametro 
-	rake test	  # Ejecuta el banco de pruebas test/tc_rps.rb
-	rake tijeras      # Ejecuta bin/ppt_main.rb tijeras
+	rake bin 	# Ejecuta bin/ppt_main.rb
+	rake test	# Ejecuta test con ..format documentation
+	rake thtml      # Ejecuta test con format:B html
